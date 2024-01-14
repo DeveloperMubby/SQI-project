@@ -1,0 +1,442 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  font-family:  "Poppins", Helvetica, Arial, Lucida, sans-serif;
+}
+header{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.096);
+    height: 100px;
+    position: fixed;
+    background-color: white;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+}
+header nav{
+    width: 80%;
+    height: 100%;
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav .imagediv img{
+    width: 90px;
+    height: 90px
+}
+header nav .linkdiv{
+    width: 800px;
+}
+header nav div ul{
+    display: flex;
+    list-style-type: none;
+    margin-left: 20px;
+    justify-content: space-around;
+    align-items: end;
+    height: 100%;
+}
+header nav div ul li a{
+    display: flex;
+    gap: 5px;
+    text-decoration: none;
+    color: #081f89;
+    font-weight: 600;
+    font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+    padding-bottom: 35px;
+}
+header nav div ul li a:hover{
+    animation-name: dropcolorchange;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes dropcolorchange {
+    to{
+        color: #0820899f;
+    }
+}
+header nav div ul li .about:hover .aboutdropdown{
+    display: block;
+    animation-name: drop;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    background-color: #ffffffdd;  
+    
+}
+@keyframes drop {
+    from{
+        transform: translateY(-15px);
+    }
+    to{
+        transform: translateY(-1px);
+    }
+}
+header nav div ul li a .aboutdropdown{
+    width: 250px;
+    height: 150px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.507);
+    margin-top: 53px;
+    border-top:medium solid #081f89;
+    border-radius: 2px;
+    font-size: 14px;
+    font-family:'Poppins',Helvetica,Arial,Lucida,sans-serif ;
+    box-shadow: 3px 3px 100px 9px rgba(0, 0, 0, 0.075);
+    display: none;
+}
+header nav div ul li a .aboutdropdown div{
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+    color: #081f89;
+}
+header nav div ul li a .aboutdropdown div:nth-of-type(1){
+    margin-top: 10px;
+}
+header nav div ul li a .aboutdropdown div:hover{
+    animation-name: dropcolorchange;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+header nav div ul li .programme:hover .programmedropdown{
+    display: block;
+    animation-name: drop;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    background-color: #ffffffdd;
+}
+header nav div ul li a .programmedropdown{
+    width: 250px;
+    min-height: 150px;
+    position: absolute;
+    margin-top: 53px;
+    border-top:medium solid #081f89;
+    border-radius: 2px;
+    font-size: 14px;
+    font-family:'Poppins',Helvetica,Arial,Lucida,sans-serif ;
+    box-shadow: 3px 3px 100px 9px rgba(0, 0, 0, 0.075);
+    display: none;
+}
+header nav div ul li a .programmedropdown div{
+    padding: 12px;
+    width: 70%;
+    margin: auto;
+    color: #081f89;
+    line-height: 30px;
+}
+header nav div ul li a .programmedropdown div:nth-of-type(1){
+    margin-top: 9px;
+}
+header nav div ul li a .programmedropdown div:hover{
+    animation-name: dropcolorchange;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+header nav div ul li .admission:hover .admissiondropdown{
+    display: block;
+    animation-name: drop;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;  
+    background-color: #ffffffdd;
+}
+header nav div ul li a .admissiondropdown{
+    width: 250px;
+    min-height: 150px;
+    position: absolute;
+    margin-top: 53px;
+    border-top:medium solid #081f89;
+    border-radius: 2px;
+    font-size: 14px;
+    font-family:'Poppins',Helvetica,Arial,Lucida,sans-serif ;
+    box-shadow: 3px 3px 100px 9px rgba(0, 0, 0, 0.075);
+    display: none;
+}
+header nav div ul li a .admissiondropdown div{
+    padding: 12px;
+    width: 70%;
+    margin: auto;
+    color: #081f89;
+    line-height: 20px;
+}
+header nav div ul li a .admissiondropdown div:nth-of-type(1){
+    margin-top: 10px;
+}
+header nav div ul li a .admissiondropdown div:hover{
+    animation-name: dropcolorchange;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+header nav div ul li .e-portal:hover .e-portaldropdown{
+    display: block;
+    animation-name: drop;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    background-color: #ffffffdd;  
+    
+}
+header nav div ul li a .e-portaldropdown{
+    width: 150px;
+    height: 130px;
+    position: absolute;
+    margin-top: 53px;
+    font-size: 14px;
+    font-family:'Poppins',Helvetica,Arial,Lucida,sans-serif ;
+    border-top:medium solid #081f89;
+    border-radius: 2px;
+    box-shadow: 3px 3px 100px 9px rgba(0, 0, 0, 0.075);
+    display: none;
+}
+header nav div ul li a .e-portaldropdown div{
+    padding: 12px;
+    width: 70%;
+    margin: auto;
+    color: #081f89;
+    line-height: 20px;
+}
+header nav div ul li a .e-portaldropdown div:nth-of-type(1){
+    margin-top: 10px;
+}
+header nav div ul li a .e-portaldropdown div:hover{
+    animation-name: dropcolorchange;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+.about{
+  color: #0c71c3;
+}
+.hidden{
+    height: 50px;
+    width: 50px;
+    margin: auto;
+    display: none;
+    font-size: 2em;
+}
+.contact-us-bar{
+    position: fixed;
+    top: 300px;
+    background-color: blue;
+    height: 120px;
+    border-radius: 0px 5px 5px 0px;
+    width: 50px;
+    z-index: 1;
+    border-radius: 20px;
+}
+.contact-us-bar div{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+}
+.contact-us-bar div:nth-of-type(1){
+    background-color: rgb(99, 109, 255);
+    border-radius: 0px 5px 0px 0px;
+}
+.contact-us-bar div:nth-of-type(3){
+    background-color: rgb(99, 156, 255);
+    border-radius: 0px 0px 5px 0px;
+}
+.back-to-top{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top: 90vh;
+    background-color: grey;
+    margin-right: 10px;
+    cursor: pointer;
+    z-index: 1;
+    display: none;
+}
+.back-to-top:hover{
+    animation-name: change;
+    animation-duration: .2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+@keyframes change {
+    to{
+        background-color: blue;
+        box-shadow: 1px 10px 10px 2px rgba(0, 0, 0, 0.247);
+        transform: translateY(-5px);
+    }
+}
+/* MAIN SECTION STARTS */
+.main-section{
+    position: relative;
+    top: 100px;
+    min-height: 300px;
+    padding-top: 50px;
+}
+.main-section h1{
+    font-size: 5em;
+    margin-left: 10%;
+}
+.main-section .banner{
+    min-height: 300px;
+    margin-top: 50px;
+}
+.main-section .banner img{
+    width: 100%;
+}
+/* CAMPUS SECTION STARTS HERE */
+.campus-section{
+    margin-top: 100px;
+    min-height: 500px;
+    padding: 0px 0px 20px 0px  ;
+}
+.campus-section .campus-ogbomosho{
+    min-height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.campus-section .campus-ogbomosho div{
+    width: 50%;
+}
+.campus-section .campus-ogbomosho .info{
+    padding-left: 8%;
+    margin-top: 40px;
+}
+.campus-section .campus-ogbomosho .info .name{
+    letter-spacing: 4px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.51);
+    margin-bottom: 10px;
+}
+.campus-section .campus-ogbomosho .info h1{
+    font-size: 3em;
+    margin-top: 10px;
+}
+.campus-section .campus-ogbomosho .info .callus{
+    min-height: 100px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.campus-section .campus-ogbomosho .info .callus ul{
+    width: 30%;
+    font-weight: 600;
+}
+.campus-section .campus-ogbomosho .info .callus ul li{
+    list-style-type: none;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.51);
+    margin-top: 10px;
+}
+.campus-section .campus-ogbomosho .info ul{
+    font-weight: 600;
+    margin-top: 30px;
+}
+.campus-section .campus-ogbomosho .info ul li{
+    list-style-type: none;
+    color: rgba(0, 0, 0, 0.51);
+    margin-top: 10px;
+}
+.campus-section .campus-ogbomosho .image{
+    z-index: 1;
+}
+.campus-section .campus-ogbomosho .image .cont{
+    width: 90%;
+    margin: auto;
+}
+.campus-section .campus-ogbomosho .image .cont .loc{
+    background-color: #0f87ff;
+    height: 200px;
+    width: 90%;
+    margin: auto;
+    margin-top: -70px;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.campus-section .campus-ogbomosho .image .cont .map{
+    width: 90%;
+    height: 400px;
+    background-color: grey;
+    margin: auto;
+}
+.campus-ogbomosho:nth-of-type(2){
+    margin-top: 150px;
+}
+.campus-ogbomosho:nth-of-type(3){
+    margin-top: 150px;
+}
+.campus-ogbomosho:nth-of-type(4){
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+footer{
+    min-height: 400px;
+    margin: auto;
+    width: 90%;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+footer div{
+    width: 200px;
+    padding: 10px;
+}
+footer .hello h2{
+    font-size: 1.2em;
+}
+footer .hello p{
+    margin-top: 20px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.56);
+    font-size: .9em;
+    line-height: 20px;
+}
+footer .hello p span{
+    color: blue;
+    cursor: pointer;
+}
+footer .quick-link h2{
+    font-size: 1.1em;
+}
+footer .quick-link li{
+    list-style-type: none;
+    margin-top: 20px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.56);
+    font-size: .9em;
+    line-height: 20px;
+    cursor: pointer;
+}
+footer .quick-link li:nth-of-type(1){
+    margin-top: 40px;
+}
+footer .location h2{
+    font-size: 1.1em;
+}
+footer .location p{
+    margin-top: 20px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.56);
+    font-size: .9em;
+    line-height: 20px;
+}
+footer .location .locate{
+    color: blue;
+    cursor: pointer;
+}
+.copyright{
+    min-height: 30px;
+    background-color: #050044;
+    color: #ffffff90;
+    font-weight: 600;
+    padding: 10px;
+}
+.copyright p{
+    margin-left: 25%;
+}

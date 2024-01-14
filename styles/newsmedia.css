@@ -1,0 +1,62 @@
+@media (max-width: 1140px) {
+    header nav .linkdiv{
+        width: 600px;
+    }
+    header nav .imagediv img{
+        width: 100%;
+        margin-top: 5px;
+    }
+}
+@media (max-width: 980px) {
+    header nav .linkdiv{
+        display: none;
+    }
+    .hidden{
+        display: block;
+        margin-right: 10%;
+    }
+    header nav .imagediv{
+        margin-left: 9%;
+    }
+    .contact-us-bar{
+        display: none;
+    }
+    .mainsection .mainsection-news{
+        font-size: 2em;
+        font-weight: 600;
+      }
+    header nav .imagediv img{
+        margin-top: 15px;
+    }
+    .mainsection .mainsection-divs-container{
+        display: block;
+    }
+    .mainsection .mainsection-divs-container .mainsection-image{
+        width: 100%;
+        margin: auto;
+    }
+    .mainsection .mainsection-divs-container .mainsection-information{
+        width: 100%; 
+    }
+    .mainsection .mainsection-divs-container .mainsection-information div{
+        width: 100%;
+    }
+    .mainsection .mainsection-divs-container .mainsection-information div:nth-of-type(1){
+        margin-top: 60px;
+    }
+    .mainsection .mainsection-divs-container .mainsection-information div h2{
+        font-size: .9em;
+    }
+    .cardsection .card{
+        margin: auto;
+    }
+    .cardsection .card:nth-of-type(1){
+        margin: auto;
+    }
+    footer{
+        flex-wrap: wrap;
+    }
+    footer div{
+        margin: auto;
+    }
+}

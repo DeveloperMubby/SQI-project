@@ -1,0 +1,158 @@
+@media (max-width: 1140px) {
+    header nav .linkdiv{
+        width: 600px;
+    }
+    header nav .imagediv img{
+        width: 100%;
+        margin-top: 5px;
+    }
+}
+@media (max-width: 980px) {
+    header nav .linkdiv{
+        display: none;
+    }
+    .hidden{
+        display: block;
+        margin-right: 10%;
+    }
+    header nav .imagediv{
+        margin-left: 9%;
+    }
+    .contact-us-bar{
+        display: none;
+    }
+    header nav .imagediv img{
+        margin-top: 15px;
+    }
+    .hero-page{
+        display: block;
+    }
+    .hero-page div{
+        width: 100%;
+        margin: auto;
+    }
+    .hero-page .hero-image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero-page .hero-image img{
+        width: 80%;
+    }
+    .at-a-glance{
+        display: block;
+        margin-top: 150px;
+    }
+    .at-a-glance .at-a-glance-image{
+        display: none;
+    }
+    .at-a-glance .at-a-glance-text{
+        width: 100%;
+    }
+    .change-the-world .card-background{
+        display: block;
+    }
+    .change-the-world .card-background .card{
+        width: 100%;
+        margin: auto;
+        margin-top: 50px;
+    }
+    .change-the-world .card-background .card .image{
+        height: 650px;
+    }
+    .programmes-overview{
+        display: block;
+    }
+    .programmes-overview div{
+        width: 100%;
+        margin: auto;
+        margin-top: 50px;
+    }
+    .our-top-cources .our-top-cources-heading-text{
+        width: 100%;
+    }
+    .our-top-cources .cources-container-div{
+        display: block;
+    }
+    .our-top-cources .cources-container-div .cources{
+        width: 100%;
+    }
+    .alumni-works{
+        text-align: center;
+    }
+    .alumni-works h2{
+        margin: auto;
+    }
+    .alumni-works .image-container{
+        grid-template-columns: 1fr 1fr;
+        row-gap: 70px;
+        margin: auto;
+    }
+    .take-a-tour .cover{
+        display: block;
+    }
+    .take-a-tour .cover .take-a-tour-text{
+        margin-top: 30px;
+        width: 100%;
+        text-align: center;
+    }
+    .take-a-tour .cover .take-a-tour-text p{
+        margin: auto;
+    }
+    .take-a-tour .cover .take-a-tour-youtube{
+        width: 100%;
+        height: 300px;
+    }
+    .why-study-at-sqi{
+        display: block;
+    }
+    .why-study-at-sqi .cover:nth-of-type(1){
+        width: 100%;
+    }
+    .why-study-at-sqi .cover:nth-of-type(1) .container{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .why-study-at-sqi .cover:nth-of-type(1) .container .cov{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .why-study-at-sqi .cover:nth-of-type(2){
+        width: 100%;
+        height: 300px;
+        margin-top: 100px;
+    }
+    .frequently-asked-question .carrier{
+        display: block;
+    }
+    .frequently-asked-question .carrier .cont{
+        width: 100%;
+    }
+    #accordion-change-color{
+        text-align: center;
+    }
+    .texts{
+        width: 100%;
+        margin: auto;
+    }
+    .get-started-sect{
+        padding: 70px 20px;
+    }
+    .cardsection .card{
+        margin: auto;
+    }
+    .cardsection .card:nth-of-type(1){
+        margin: auto;
+    }
+    footer{
+        flex-wrap: wrap;
+    }
+    footer div{
+        margin: auto;
+    }
+}
+@media (max-width: 768px) {
+    .hero-page .hero-text h1{
+        font-size: 2em;
+    }
+}
